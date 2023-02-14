@@ -11,10 +11,10 @@ export const pureAddUser = (name: string,
                             setError: (error: string) => void,
                             setName: (name: string) => void,
                             addUserCallback: (name: string) => void) => {
-    if(name === '') {
-        setError('Name is required')
+    if(name.trim() === '') {
+        setError("Ошибка! Введите имя!")
     }
-    else {
+    else if(name.trim() !== ''){
         addUserCallback(name)
         setName('')
     }
@@ -22,11 +22,11 @@ export const pureAddUser = (name: string,
 }
 
 export const pureOnBlur = (name: string, setError: (error: string) => void,) => {
-    return name === '' && setError('Name is required')// если имя пустое - показать ошибку
+    return name.trim() === '' && setError("Ошибка! Введите имя!")// если имя пустое - показать ошибку
 }
 
-export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: (name: string) => void) => {
-    if(e.code === 'Enter') addUser(e.currentTarget.value)// если нажата кнопка Enter - добавить
+export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
+    if(e.currentTarget && e.key === 'Enter') addUser()// если нажата кнопка Enter - добавить
 }
 
 // более простой и понятный для новичков
