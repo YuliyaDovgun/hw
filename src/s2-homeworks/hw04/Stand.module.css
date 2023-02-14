@@ -1,7 +1,10 @@
 .stand {
+    padding-left: 70px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    margin-right: 70px;
 }
 
 .inputs {
