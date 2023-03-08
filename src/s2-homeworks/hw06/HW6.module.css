@@ -1,5 +1,10 @@
 .buttonsContainer {
+    padding-left: 50px;
 }
 
 .editableSpanContainer {
+    padding-left: 50px;
+    margin: 20px 0;
+    color: #0080FF;
+    font-size: 16px;
 }
