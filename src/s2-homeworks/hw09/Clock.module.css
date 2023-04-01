@@ -2,13 +2,19 @@
 }
 
 .clock {
+    box-sizing: border-box;
+    height: 50px;
+    padding-left: 50px;
 }
 
 .watch {
+    padding: 0 0 5px 10px;
 }
 
 .watch strong {
 }
 
 .more {
+    padding: 0 0 10px 10px;
+    color: #C2C2C2;
 }
