@@ -27,7 +27,9 @@ function HW11() {
 
     return (
         <div id={'hw11'}>
+            <hr/>
             <div className={s2.hwTitle}>Homework #11</div>
+            <hr/>
 
             <div className={s2.hw}>
                 <div className={s.container}>

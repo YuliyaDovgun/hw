@@ -1,8 +1,13 @@
 .container {
+    padding-left: 70px;
 }
 
 .wrapper {
+    display: flex;
 }
 
 .number {
+    display: block;
+    min-width: 30px;
+    font-weight: bold;
 }
