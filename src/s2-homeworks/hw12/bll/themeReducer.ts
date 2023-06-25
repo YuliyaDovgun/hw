@@ -8,12 +8,9 @@ export type themeStateType = {themeId: number}
 const initState: themeStateType = {
     themeId: 1,
 }
-debugger
 export const themeReducer = (state = initState, action: ActionType): themeStateType => { // fix any
-    debugger
     switch (action.type) {
         case 'SET_THEME_ID': {
-            debugger
             return {...state, themeId: action.id}
         }
         // дописать
